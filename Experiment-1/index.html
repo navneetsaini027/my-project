@@ -8,19 +8,24 @@
 
   <h2>Student Registration Form</h2>
 
-  <label for="nameInput">Name:</label><br>
-  <input type="text" id="nameInput" placeholder="Enter your full name"><br><br>
+  <form>
+    Name:<br>
+    <input type="text" placeholder="Enter your full name"><br><br>
 
-  <label for="emailInput">Email:</label><br>
-  <input type="email" id="emailInput" placeholder="Enter your email"><br><br>
+    Email:<br>
+    <input type="email" placeholder="Enter your email"><br><br>
 
-  <label for="ageInput">Age:</label><br>
-  <input type="number" id="ageInput" placeholder="Enter"><br><br>
+    Age:<br>
+    <input type="text" id="ageInput" placeholder="Enter your age"><br><br>
 
-  <button onclick="showMessage()">Register</button>
+    <button type="button" onclick="showMessage()">Register</button>
+  </form>
 
-  <div id="outputMessage"></div>
+  <script>
+    function showMessage() {
+      alert("You have successfully registered!");
+    }
+  </script>
 
-  <script src="script.js"></script>
 </body>
 </html>
