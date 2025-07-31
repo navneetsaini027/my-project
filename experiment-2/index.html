@@ -3,16 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banking UI</title>
+  <title>Balance Display</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="outercontainer">
     <div class="innercontainer">
-      <div class="balance">$0</div>
-      <div class="deposit">Deposit</div>
-      <div class="withdraw">Withdraw</div>
+      <div class="balance" id="balanceDisplay">Balance: ₹0</div>
+      <button class="deposit" onclick="deposit()">Deposit ₹100</button>
+      <button class="withdraw" onclick="withdraw()">Withdraw ₹50</button>
     </div>
   </div>
+
+  <script>
+    let balance = 0;
+
+    function deposit() {
+      balance += 100;
+      document.getElementById("balanceDisplay").innerText = "Balance: ₹" + balance;
+    }
+
+    function withdraw() {
+      if (balance >= 50) {
+        balance -= 50;
+        document.getElementById("balanceDisplay").innerText = "Balance: ₹" + balance;
+      } else {
+        alert("Insufficient balance!");
+      }
+    }
+  </script>
 </body>
 </html>
