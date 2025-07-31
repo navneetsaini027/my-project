@@ -1,0 +1,31 @@
+For HTML :
+1. This HTML file creates a Student Registration Form.  
+2. It has a title "Student Registration Form" displayed on the browser tab.  
+3. The form includes three input fields:
+   - Name (text input)
+   - Email (email input)
+   - Age (text input)
+4. A "Register" button is added to submit the form.
+5. When the button is clicked, a simple JavaScript alert message appears saying "You have successfully registered!".
+6. The form is linked to an external CSS file (style.css) for styling.
+7. Basic line breaks (<br>) are used to provide spacing between input fields.
+8. The form structure is simple and suitable for basic student registration.
+
+
+For CSS :
+1. The body uses a serif font and has margins of 20px from the top and left side.
+2. The heading (h2) is styled with:
+   - Font size of 24px
+   - Bold font weight
+   - A bottom margin of 20px for spacing
+3. Input fields are styled with:
+   - Width of 200px and height of 22px
+   - Font size of 14px and left padding of 4px
+   - A light gray (#999) border
+   - Small top margin of 4px for spacing
+4. The button is styled with:
+   - Top margin of 12px for spacing
+   - Font size of 14px and padding for better shape
+   - Solid black border and light gray (#f2f2f2) background
+   - Cursor changes to pointer when hovered
+5. Overall, the CSS provides a simple, clean layout for the registration form.
