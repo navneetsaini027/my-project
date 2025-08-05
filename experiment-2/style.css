@@ -1,67 +1,75 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height :100vh;
+}
+.Outer_div {
+    display: flex;
+    background-color: rgb(224, 220, 220);
+    border : 2px solid black;
+    width : 350px ;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+
 }
 
-body {
-  background: #fff;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Inner_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width:250px;
+    height :150px;
+    border-radius : 10px;
 }
 
-.outercontainer {
-  border: 2px solid black;
-  background: #f4f4f4;
-  width: 500px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Amount {
+    margin-bottom: 10px;
+    border-style: none;
+    background-color: none;
+    color: green;
+    font-size: 23px;
 }
 
-.innercontainer {
-  background: #fff;
-  width: 350px;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.Deposit, .Withdraw {
+    margin: 5px;
+    height : 30px;
+    width : 200px;
+    border-style : none;
+    border-radius: 5px;
 }
 
-.balance {
-  color: green;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.Deposit{
+    background-color: green;
+    color:white;
 }
 
-.deposit {
-  background: #4caf50;
-  color: white;
-  font-size: 18px;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
+.Withdraw{
+    background-color: red;
+    color:white;
 }
 
-.withdraw {
-  background: #f44336;
-  color: white;
-  font-size: 18px;
-  padding: 15px;
-  border-radius: 8px;
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap : 7px;
+}
+@media (max-width: 480px) {
+    .buttons{
+       flex-direction: column;
+
+    }
+}
+
+@media (min-width: 481px) {
+    .Deposit, .Withdraw {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
 }

@@ -1,31 +1,65 @@
-For HTML :
-1. This HTML file creates a Student Registration Form.  
-2. It has a title "Student Registration Form" displayed on the browser tab.  
-3. The form includes three input fields:
-   - Name (text input)
-   - Email (email input)
-   - Age (text input)
-4. A "Register" button is added to submit the form.
-5. When the button is clicked, a simple JavaScript alert message appears saying "You have successfully registered!".
-6. The form is linked to an external CSS file (style.css) for styling.
-7. Basic line breaks (<br>) are used to provide spacing between input fields.
-8. The form structure is simple and suitable for basic student registration.
+In this Experiment I created a Bank deposit and Withdraw UI by using HTML and Basic CSS.
 
+HTML :
 
-For CSS :
-1. The body uses a serif font and has margins of 20px from the top and left side.
-2. The heading (h2) is styled with:
-   - Font size of 24px
-   - Bold font weight
-   - A bottom margin of 20px for spacing
-3. Input fields are styled with:
-   - Width of 200px and height of 22px
-   - Font size of 14px and left padding of 4px
-   - A light gray (#999) border
-   - Small top margin of 4px for spacing
-4. The button is styled with:
-   - Top margin of 12px for spacing
-   - Font size of 14px and padding for better shape
-   - Solid black border and light gray (#f2f2f2) background
-   - Cursor changes to pointer when hovered
-5. Overall, the CSS provides a simple, clean layout for the registration form.
+To make this I use the different Tags of HTML like div , button .
+In order to apply diffrent css to different Div a class attribute is intialised inside that Tag
+
+Basic Structure:(Experiment-2)
+
+An outer_div which hold all the content inside it  An inner_div which holds the content like deposit and withdraw buttons also withdraw amount.
+
+By this HTML skeleton is Ready now we have to apply CSS to it.
+-------------------------------------------------------------------------------------------------
+CSS :
+
+It stands for cascading style sheets which used to add design and color to the HTML code.
+
+Types:
+
+Inline css : write CSS inside the specific TAg.
+Internal CSS : A Style tag include in the HTML file which defines which style to which tag.
+External CSS : Instead of writing CSS code to the HTML file , A Separated file is created  in that folder
+                and then the path of that file is include in the HTML file by using LINK tag. 
+
+Basic Structure of CSS :
+
+Selector {                      i.e  body{
+    Property : value ;                 background-color : yellow;
+        }                                  }
+
+CSS properties used in this experiment :
+
+BOX model :
+This is basic model of css which help to identify what is padding ,margin , border and content.
+
+Padding : Space between the border and Content.
+Margin : The space between two containers.
+
+Design Flex :
+
+This is basically a Layout which help to organize the Content is Row and column .
+if Flex- direction is Row then row wise content wil display and similar for column.
+
+Responsiveness :
+
+Responsive UI basicaly a UI which adjust itself according to screen ratio .
+For this we use @media selector which have some parameter on to which the UI become Responsive.
+
+Some of the basic CSS Properties Used :
+
+background-color         // to set bg color .
+color                    // to set color of fonts.
+justify-content          // to justify the cotent .
+border                   // to edit the border of the container.
+border-radius            // to smooth the edges of the containers
+display                  // which type of layout are we using. 
+
+-------------------------------------------------------------------------------------
+Learning Outcomes :
+
+1) How to add class attribute to a tag and what the use of it.
+2) Use of flex display to make the content aligned i.e row and col according to the need.
+3) How to apply css to the classes.
+4) Understand the box model concept.
+5) How to make a Responsive UI by usign @margin .

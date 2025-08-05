@@ -1,36 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Balance Display</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Banking Application</title>
 </head>
 <body>
-  <div class="outercontainer">
-    <div class="innercontainer">
-      <div class="balance" id="balanceDisplay">Balance: ₹0</div>
-      <button class="deposit" onclick="deposit()">Deposit ₹100</button>
-      <button class="withdraw" onclick="withdraw()">Withdraw ₹50</button>
+    <div class ="Outer_div">
+        <div class ="Inner_div">
+           <div class = "Amount">$0</div> 
+            <div class="buttons">
+            <button class ="Deposit">Deposit</button>
+            <button class = "Withdraw">Withdraw</button>
+            </div> 
+        </div>
     </div>
-  </div>
-
-  <script>
-    let balance = 0;
-
-    function deposit() {
-      balance += 100;
-      document.getElementById("balanceDisplay").innerText = "Balance: ₹" + balance;
-    }
-
-    function withdraw() {
-      if (balance >= 50) {
-        balance -= 50;
-        document.getElementById("balanceDisplay").innerText = "Balance: ₹" + balance;
-      } else {
-        alert("Insufficient balance!");
-      }
-    }
-  </script>
+    
 </body>
 </html>
