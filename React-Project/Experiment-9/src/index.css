@@ -1,0 +1,11 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* make sure everything starts at top-left */
+#root {
+  text-align: left;
+  padding: 20px;
+}
